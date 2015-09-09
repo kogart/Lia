@@ -4,9 +4,33 @@ body{
 
 #mainDiv{
     position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 200px;
-    width: 200px;
+    left: 8%;
+    top: 5%;
+    height: 65%;
+    width: 87%;
     background-color: black;
+}
+#up{
+    position: absolute;
+    left: 48%;
+    top: 1%;
+}
+#down{
+    position: absolute;
+    left: 48%;
+    bottom: 1%;
+}
+#left{
+    position: absolute;
+    top: 49%;
+    left: 1%;
+}
+#right{
+    position: absolute;
+    top: 49%;
+    right: 1%;
+}
+.button1{
+    height: 50px;
+    width: 100px;
 }
