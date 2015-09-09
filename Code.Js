@@ -11,31 +11,24 @@ var lvlGain = false;
 
 
 
-var lvlup = function(_exptotal,_expchar){
-    if (_expchar => _exptotal) {
-        return true;
-    }else{return false}
-    if (lvlGain) {
+var lvlup = function(){
+    
+    if (expchar >= exptotal) {
     lvlcurrent++
     expchar = expchar - exptotal;
     exptotal = 1.1*(exptotal*1.6+10);
-}
-}
-
-var expgain = function(expdrop, exptotal, expchar)
-{
-
-    expchar += expdrop;
-    expdrop = 0;
-   // lvlGain = lvlup(exptotal,_expchar);
     
-    if (expchar => exptotal) {
-    lvlcurrent++
-    expchar -= exptotal;
-    exptotal = 1.1*(exptotal*1.6+10);
-    lvlGain = false;
-    }
-   //
+}
+return lvlcurrent;
+}
+
+
+var expgain = function(expdrop)
+{
+    var _expchar = expchar;
+    _expchar = _expchar + expdrop;
+     expdrop = 0;
+     expchar = _expchar
     return expchar;
     
 }
