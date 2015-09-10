@@ -8,6 +8,18 @@ var mptotal = 50;
 var lvlGain = false;
 
 
+var character = function(){
+    var Strenght = 5;
+    var Inteligence = 5;
+    var Agility = 5;
+    var Stamina = 5;
+    
+    
+    
+}
+
+
+
 
 
 
@@ -16,7 +28,7 @@ var lvlup = function(){
     if (expchar >= exptotal) {
     lvlcurrent++
     expchar = expchar - exptotal;
-    exptotal = 1.1*(exptotal*1.6+10);
+    exptotal = Math.round(1.1*(exptotal*1.6+10));
     
 }
 return lvlcurrent;
