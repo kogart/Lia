@@ -8,7 +8,7 @@ body{
     top: 5%;
     height: 65%;
     width: 87%;
-    background-color: black;
+    background-color: white;
 }
 #up{
     position: absolute;
@@ -31,6 +31,12 @@ body{
     right: 1%;
 }
 .button1{
+    position: fixed;
     height: 50px;
     width: 100px;
+}
+#txt{
+    position: absolute;
+    left: 100px;
+    top: 100px;
 }

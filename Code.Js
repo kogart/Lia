@@ -5,7 +5,6 @@ var exptotal = 100;
 var expchar = 0;
 var hptotal = 50;
 var mptotal = 50;
-var lvlGain = false;
 
 
 var character = function(){
@@ -13,9 +12,7 @@ var character = function(){
     var Inteligence = 5;
     var Agility = 5;
     var Stamina = 5;
-    
-    
-    
+    var SkillPoints = 10;
 }
 
 
@@ -61,4 +58,43 @@ $("#left").click(function(){
 $("#right").click(function(){
     x += 1
     console.log(x,y)
-    });  
+    });
+
+
+
+
+
+$(document).ready(function(){
+    
+    
+        $("p").on('taphold', function() {
+                var doc = document;
+                var text = $("p")[0];   
+
+                if (doc.body.createTextRange) { // ms
+                    var range = $("p").createTextRange();
+                    range.moveToElementText(text);
+                    range.select();
+                } else if (window.getSelection) { // moz, opera, webkit
+                    var selection = window.getSelection();            
+                    var range = doc.createRange();
+                    range.selectNodeContents(text);
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                
+}
+
+            
+            
+            
+            }); });
+
+
+
+
+
+
+
+
+
+
